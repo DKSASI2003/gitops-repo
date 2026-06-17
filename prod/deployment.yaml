@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-demo
+  namespace: demo
 spec:
   replicas: 1
   selector:
@@ -13,7 +14,8 @@ spec:
         app: nginx-demo
     spec:
       containers:
-      - name: nginx
-        image: docker.io/deepak2003/kargo-demo:v1
+      - name: nginx-demo
+        image: deepak2003/kargo-demo:v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
