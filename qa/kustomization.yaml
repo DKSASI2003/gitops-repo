@@ -5,4 +5,4 @@ resources:
 - service.yaml
 images:
 - name: deepak2003/kargo-demo
-  newTag: 1.0.0
+  newTag: 1.0.1
