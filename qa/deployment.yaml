@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/1.0.0
 kind: Deployment
 metadata:
   name: nginx-demo
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx-demo
-        image: deepak2003/kargo-demo:v1
+        image: deepak2003/kargo-demo:1.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
