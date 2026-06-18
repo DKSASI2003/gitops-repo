@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/1.0.0alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx-qa
